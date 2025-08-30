@@ -1,9 +1,10 @@
 {
   "name": "ai-codyy",
-  "displayName": "Codyy - Typing Streak Tracker",
+  "displayName": "Coddy - Typing Streak Tracker",
   "description": "A productivity extension for maintaining typing streaks in VSCode with animated indicators",
-  "version": "0.0.1",
-  "publisher": "sandy",
+  "version": "0.0.3",
+  "publisher": "sandeep-sarkar",
+  "icon": "imges/icon_type_2.png",
   "engines": {
     "vscode": "^1.103.0"
   },
