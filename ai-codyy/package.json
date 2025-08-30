@@ -77,4 +77,10 @@
     "@vscode/test-cli": "^0.0.11",
     "@vscode/test-electron": "^2.5.2"
   }
+
+  ,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandy4242/ai-codyy#"
+  }
 }
