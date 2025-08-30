@@ -1,23 +1,54 @@
 {
   "name": "ai-codyy",
-  "displayName": "Ai-codyy",
-  "description": "Use of AI to help debug code and creare code snippets",
+  "displayName": "Codyy - Typing Streak Tracker",
+  "description": "A productivity extension for maintaining typing streaks in VSCode with animated indicators",
   "version": "0.0.1",
+  "publisher": "sandy",
   "engines": {
     "vscode": "^1.103.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "keywords": [
+    "productivity",
+    "typing",
+    "streak",
+    "motivation",
+    "coding",
+    "status-bar"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "ai-codyy.helloWorld",
-        "title": "Hello World"
+        "command": "typingStreak.toggle",
+        "title": "Toggle Typing Streak"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Typing Streak",
+      "properties": {
+        "typingStreak.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable typing streak indicator"
+        },
+        "typingStreak.streakThreshold": {
+          "type": "number",
+          "default": 5,
+          "description": "Characters per second to maintain streak"
+        },
+        "typingStreak.resetDelay": {
+          "type": "number",
+          "default": 3000,
+          "description": "Milliseconds of inactivity before resetting streak"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
