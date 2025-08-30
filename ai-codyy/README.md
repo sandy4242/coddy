@@ -1,71 +1,124 @@
-# ai-codyy README
+# Codyy - Typing Streak Tracker 🔥
 
-This is the README for your extension "ai-codyy". After writing up a brief description, we recommend including the following sections.
+A productivity extension for VS Code that tracks and visualizes your typing streaks with animated indicators to keep you motivated while coding!
 
-## Features
+![Codyy Extension Demo](https://via.placeholder.com/800x400/1e1e1e/ffffff?text=Typing+Streak+Demo)
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## ✨ Features
 
-For example if there is an image subfolder under your extension project workspace:
+- **Real-time Typing Streak Tracking**: Counts characters as you type and maintains your streak
+- **Animated Status Bar Indicator**: Beautiful emoji indicators that evolve as your streak grows
+- **Progressive Streak Levels**: Different emojis and animations for different achievement levels:
+  - 🔥 **Fire Starter** (10+ characters)
+  - 🚀 **Rocket Mode** (25+ characters)  
+  - ⚡ **Lightning Fast** (50+ characters)
+  - 💫 **Super Nova** (100+ characters)
+  - ✨ **Stellar Coder** (200+ characters)
+- **Smart Reset Logic**: Automatically resets after 3 seconds of inactivity
+- **Pulsing Animation**: Active streaks pulse to show they're live
+- **Celebration Messages**: Get congratulated for impressive streaks
+- **Customizable Settings**: Adjust streak thresholds and behavior
 
-\!\[feature X\]\(images/feature-x.png\)
+## 🚀 Installation
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Open VS Code
+2. Go to Extensions (Ctrl+Shift+X)
+3. Search for "Codyy"
+4. Click Install
 
-## Requirements
+## 📖 Usage
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Once installed, Codyy automatically starts tracking your typing:
 
-## Extension Settings
+1. **Start Coding**: Open any file and begin typing
+2. **Watch Your Streak**: The status bar shows your current streak with animated indicators
+3. **Keep the Momentum**: Continue typing to build higher streaks
+4. **Take Breaks**: Streaks reset after 3 seconds of inactivity
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Commands
 
-For example:
+- `Toggle Typing Streak`: Enable/disable the streak tracker
+  - Access via Command Palette (Ctrl+Shift+P)
 
-This extension contributes the following settings:
+## ⚙️ Configuration
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Customize Codyy through VS Code settings:
 
-## Known Issues
+{
+"typingStreak.enabled": true,
+"typingStreak.streakThreshold": 5,
+"typingStreak.resetDelay": 3000
+}
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+### Settings Options
 
-## Release Notes
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `typingStreak.enabled` | Enable/disable the extension | `true` |
+| `typingStreak.streakThreshold` | Characters per second to maintain streak | `5` |
+| `typingStreak.resetDelay` | Milliseconds before streak resets | `3000` |
 
-Users appreciate release notes as you update your extension.
+## 🎯 Streak Levels
 
-### 1.0.0
+| Level | Threshold | Emoji | Description |
+|-------|-----------|--------|-------------|
+| Fire Starter | 10+ chars | 🔥 | You're warming up! |
+| Rocket Mode | 25+ chars | 🚀 | Taking off! |
+| Lightning Fast | 50+ chars | ⚡ | Super speed! |
+| Super Nova | 100+ chars | 💫 | Incredible momentum! |
+| Stellar Coder | 200+ chars | ✨ | Coding legend! |
 
-Initial release of ...
+## 🛠️ Development
 
-### 1.0.1
+Want to contribute? Great!
 
-Fixed issue #.
+Clone the repository
+git clone <https://github.com/sandy4242/coddy#>
 
-### 1.1.0
+Install dependencies
+npm install
 
-Added features X, Y, and Z.
+Run the extension
+npm run watch
+
+Press F5 to launch Extension Development Host
+
+
+## 📝 Release Notes
+
+### 0.0.1
+
+- Initial release
+- Real-time typing streak tracking
+- Animated status bar indicators
+- Progressive streak levels
+- Customizable settings
+- Auto-reset functionality
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Thanks to the VS Code extension API for making this possible
+- Inspired by productivity tools and gamification concepts
+- Built with TypeScript and lots of ☕
 
 ---
 
-## Following extension guidelines
+**Enjoy coding with Codyy!** 🎉
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+*Keep your streak alive and code with passion!*
+---
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+## 📊 Stats
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/sandeep-sarkar.ai-codyy)
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/sandeep-sarkar.ai-codyy)
+![Installs](https://img.shields.io/visual-studio-marketplace/i/sandeep-sarkar.ai-codyy)
+![Rating](https://img.shields.io/visual-studio-marketplace/r/sandeep-sarkar.ai-codyy)
